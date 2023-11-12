@@ -5,7 +5,7 @@
          Arabic Evangelical Church 
       </title>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style/style.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -109,7 +109,7 @@
          </div>
       </div>
       <!-- The Contact Section -->
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <div class="w3-container w3-content w3-padding-32" style="max-width:800px" id="contact">
          <h2 class="w3-center">اتصل بنا</h2>
          <p class="w3-opacity w3-center"><i>اترك لنا ملاحضاتك</i></p>
          <div class="w3-row w3-padding-32">
@@ -133,27 +133,22 @@
       </div>
       <!-- End Page Content -->
       <!-- Image of location/map -->
-      <iframe title="Map of Arabic Evangelical Church الكنيسة الانجيلية العربية في ايرلندا" width="100%" height="250" style="border:0" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDaYMsfNlPNJPW_uusVktJ9JlBGw44GkUI&amp;zoom=15&amp;q=Adelaide+Rd%2C+Saint+Kevin%27s%2C+Dublin+2%2C+D02+HP49" speechify-initial-font-family="Raleway, HelveticaNeue, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" speechify-initial-font-size="15px">
-      </iframe>
       <div id="map"></div>
-    
       <!-- Footer -->
       <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-        <a href="https://www.facebook.com/Arabicevangelicalchurchireland"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+         <a href="https://www.facebook.com/Arabicevangelicalchurchireland"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
          <i class="fa fa-twitter w3-hover-opacity"></i>
          <i class="fa fa-linkedin w3-hover-opacity"></i>
          <i class="w3-medium" style="display: block;"> ©Copyright 2023 </i>
       </footer>
-      <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaYMsfNlPNJPW_uusVktJ9JlBGw44GkUI&callback=initMap&libraries=places&v=weekly"
-      defer
-      ></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaYMsfNlPNJPW_uusVktJ9JlBGw44GkUI&callback=initMap&libraries=places&v=weekly" defer></script>
+      <!-- map javascript callback -->
       <script>
          // Call the initMap function when the page has finished loading
          document.addEventListener("DOMContentLoaded", function () {
            initMap();
          });
-       </script>
+      </script>
       <script src="script/maps.js"></script>
       <script>
          // Automatic Slideshow - change image every 4 seconds
