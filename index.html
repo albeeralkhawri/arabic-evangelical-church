@@ -99,7 +99,7 @@
             <h2 class="w3-wide">المنشورات</h2>
             <p class="w3-opacity"><i>اخر اخبار الكنيسة</i></p>
             <br>
-            <div style="width: 500px; max-width: 800px; height: 700px; overflow: hidden;">
+            <div style="width: 500px; max-width: 100%; height: 700px; overflow: hidden;">
                <iframe
                   src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FArabicevangelicalchurchireland%2F&tabs=timeline&width=800&height=700&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=684276887101038"
                   style="border: none; overflow: hidden; width: 100%; height: 100%;"
@@ -119,15 +119,16 @@
                <a href="arabicevangelicalchurchireland@gmail.com"> <i class="fa fa-envelope w3-hover-opacity" style="width:100%"> arabicevangelicalchurchireland@gmail.com </i><br></a>
             </div>
             <div class="w3-col m6">
-               <form action="/action_page.php" target="_blank">
+               <form id="register-form" class="register-form">
                   <div class="w3-row-padding">
-                     <input class="w3-input w3-border" type="name" placeholder="الاسم الكامل" required name="Name">
-                     <input class="w3-input w3-border" type="email" placeholder="البريد الاكتروني" required name="Email">
-                     <input class="w3-input w3-border" type="tel" placeholder="رقم الهاتف" required name="Email">
-                     <input class="w3-input w3-border" type="text" placeholder="نص الرسالة" required name="Message">
-                     <button class="w3-button w3-black w3-section w3-right" type="submit">ارسال</button>
+                      <input class="w3-input w3-border" type="name" name="name" id="name" placeholder="الاسم الكامل" required name="Name">
+                      <input class="w3-input w3-border" type="email" name="email" id="email" placeholder="البريد الاكتروني" required name="Email">
+                      <input class="w3-input w3-border" type="tel" name ="tel" id="tel" placeholder="رقم الهاتف" required name="Phone">
+                      <input class="w3-input w3-border" type="text" name="text" id="text" placeholder="نص الرسالة" required name="Message">
+                      <input type="submit" id="submit"  class="w3-button w3-black w3-section w3-right"  value="ارسال">
+                      <div id="success-message"></div>   <div id="errorMessage"></div>
                   </div>
-               </form>
+              </form>
             </div>
          </div>
       </div>
@@ -141,6 +142,11 @@
          <i class="fa fa-linkedin w3-hover-opacity"></i>
          <i class="w3-medium" style="display: block;"> ©Copyright 2023 </i>
       </footer>
+      <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+      emailjs.init('2R27QESs-vyKbZnOC')
+      </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaYMsfNlPNJPW_uusVktJ9JlBGw44GkUI&callback=initMap&libraries=places&v=weekly" defer></script>
       <!-- map javascript callback -->
       <script>
@@ -149,8 +155,10 @@
            initMap();
          });
       </script>
+      <script src="script/emailjs.js"></script>
       <script src="script/maps.js"></script>
       <script>
+
          // Automatic Slideshow - change image every 4 seconds
          var myIndex = 0;
          carousel();
