@@ -650,6 +650,19 @@ a {
     width: 99.99999%;
   }
 }
+
+/* Media query for screen sizes 550px and below */
+@media only screen and (max-width: 550px) {
+  /* Styles specific to screen sizes 550px and below go here */
+.lag-face{
+  display: none;
+
+}
+.min-face{
+  display: block!important;
+}
+  /* Add more responsive styles as needed */
+}
 @media (min-width: 993px) {
   .w3-col.l1 {
     width: 8.33333%;
