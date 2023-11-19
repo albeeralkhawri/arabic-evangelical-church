@@ -53,6 +53,12 @@ To manually test the Arabic Evangelical Church project, follow these steps:
 5. **Redirect Domain:**
    - Visit [Arabic Church Redirect](https://www.arabicchurch.ie/) and confirm that it redirects to the main domain.
 
+community.
+
+## Hosting
+
+This project is hosted by GitHub custom Domain Page and github provide TSL free certificate
+
 ## License
 
 This project is open source.
