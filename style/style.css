@@ -7,6 +7,32 @@
   * Always set the map height explicitly to define the size of the div element
   * that contains the map. 
   */
+/* News Title*/
+.title-bar-container {
+    overflow: hidden;
+    }
+
+    .title-bar {
+    background-color: #ffffff00;
+    color: #f7f7f7;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px; 
+    white-space: nowrap; 
+    position: relative;
+    animation: moveLeftToRight 20s linear infinite;
+    }
+
+    @keyframes moveLeftToRight {
+    0%, 100% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+}
+
+ 
 #w3-black {
   /* height: 100vh; */
   overflow: hidden;
@@ -660,6 +686,11 @@ a {
 }
 .min-face{
   display: block!important;
+}
+.title-bar {
+  white-space: normal;
+  animation: moveLeftToRight 20s linear infinite;
+  font-size: 16px; /* Allow text to wrap on smaller screens */
 }
   /* Add more responsive styles as needed */
 }
