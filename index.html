@@ -3,11 +3,52 @@
    <head>
       <title>Arabic Church in Ireland - الكنيسة العربية في ايرلندا</title>
       <link rel="icon" href="img/logo/icon-parish.png" type="image/x-icon">
+    
+      <!-- Charset and Viewport -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Learn about the Arabic Church in Ireland, its services, events, and community activities. Discover religious services in Dublin. تعرف على الكنيسة العربية في أيرلندا وخدماتها وفعالياتها وأنشطتها المجتمعية.">
+    
+      <!-- Description and Keywords -->
+      <meta name="description" content="Learn about the Arabic Church in Ireland, its services, events, and community activities. Discover religious services in Dublin. تعرف على الكنيسة العربية في أيرلندا وخدماتها وفعالياتها وأنشطاتها المجتمعية.">
       <meta name="keywords" content="Arabic Church, Church in Ireland, الكنيسة العربية, ايرلندا, Religious Services in Dublin, Community Activities">
       <meta name="language" content="EN, AR">
+    
+      <!-- Open Graph Tags for Social Media -->
+      <meta property="og:title" content="Arabic Church in Ireland - الكنيسة العربية في ايرلندا">
+      <meta property="og:description" content="Learn about the Arabic Church in Ireland, its services, events, and community activities. Discover religious services in Dublin. تعرف على الكنيسة العربية في أيرلندا وخدماتها وفعالياتها وأنشطاتها المجتمعية.">
+      <meta property="og:image" content="img/logo/icon-parish.png">
+      <meta property="og:url" content="https://arabicevangelicalchurch.ie/">
+      <meta property="og:type" content="website">
+      
+      <!-- Twitter Card Tags -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Arabic Church in Ireland - الكنيسة العربية في ايرلندا">
+      <meta name="twitter:description" content="Learn about the Arabic Church in Ireland, its services, events, and community activities. Discover religious services in Dublin. تعرف على الكنيسة العربية في أيرلندا وخدماتها وفعالياتها وأنشطاتها المجتمعية.">
+      <meta name="twitter:image" content="img/logo/icon-parish.png">
+      <meta name="twitter:site" content="@yourtwitterhandle"> <!-- Replace with your Twitter handle if applicable -->
+
+      <!-- Canonical URL -->
+      <link rel="canonical" href="https://arabicevangelicalchurch.ie/">
+      <!-- Structured Data (JSON-LD) for Local Business -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Arabic Church in Ireland",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Adelaide Rd",
+          "addressLocality": "Saint Kevin's",
+          "addressRegion": "Dublin",
+          "postalCode": "D02 HP49",
+          "addressCountry": "IE"
+        },
+        "telephone": "+353862102319",
+        "url": "https://arabicevangelicalchurch.ie/",
+        "description": "Learn about the Arabic Church in Ireland, its services, events, and community activities. Discover religious services in Dublin. تعرف على الكنيسة العربية في أيرلندا وخدماتها وفعالياتها وأنشطاتها المجتمعية."
+      }
+      </script>
+      <!-- CSS Links -->
       <link rel="stylesheet" href="style/style.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -202,31 +243,24 @@
      </div>
      
       <!-- End Page Content -->
-      <!-- Image of location/map -->
-      <div id="map"></div>
+      <!-- location/map -->
+      <div class="map-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2382.5851404689533!2d-6.2591092!3d53.332781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670ea184284f39%3A0x494a7c87af6d5077!2sAdelaide%20Road%20Presbyterian%20Church!5e0!3m2!1sen!2sie!4v1723334831272!5m2!1sen!2sie" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
       <!-- Footer -->
       <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
          <a href="https://www.facebook.com/Arabicevangelicalchurchireland" title="صفحة الفيسبوك"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
          <i class="fa fa-twitter w3-hover-opacity"></i>
          <i class="fa fa-linkedin w3-hover-opacity"></i>
-         <i class="w3-medium" style="display: block;"> ©Copyright 2023 </i>
+         <i class="w3-medium" style="display: block;"> Copyright 2024 by <a href="https://aadigitalworks.github.io/home/">AA DigitaWorks</a>©</i>
       </footer>
       <script type="text/javascript"
          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
       <script type="text/javascript">
          emailjs.init('2R27QESs-vyKbZnOC')
       </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaYMsfNlPNJPW_uusVktJ9JlBGw44GkUI&callback=initMap&libraries=places&v=weekly" defer></script>
-      <!-- map javascript callback -->
-      <script>
-         // Call the initMap function when the page has finished loading
-         document.addEventListener("DOMContentLoaded", function () {
-           initMap();
-         });
-      </script>
       <script src="script/emailjs.js"></script>
-      <script src="script/maps.js"></script>
-      <script>
+      <script defer>
          // Automatic Slideshow - change image every 4 seconds
          var myIndex = 0;
          carousel();

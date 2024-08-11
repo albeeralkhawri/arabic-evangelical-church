@@ -51,20 +51,36 @@ body {
   padding: 0;
 }
 
-#map {
-  height: 30vh; /* Use viewport height instead of percentage */
+/* Style for the footer */
+footer {
   width: 100%;
+  background-color: #f1f1f1; /* Change this to your preferred background color */
+  padding: 0; /* Remove padding if needed */
+  margin: 0; /* Remove margin if needed */
 }
+
+/* Style for the map container */
+.map-container {
+  width: 100%;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Style for the iframe */
+.map-container iframe {
+  width: 100%;
+  height: 50vh; /* 50% of the viewport height */
+}
+
 
 footer {
   margin: 0;
   padding: 20px; /* Adjust as needed */
 }
 
-* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */ html {
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */ html {
   box-sizing: border-box;
 }
-*
+
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
   -ms-text-size-adjust: 100%;
