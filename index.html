@@ -7,7 +7,15 @@
       <!-- Charset and Viewport -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+      <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self' data: https:;
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*;
+      style-src 'self' 'unsafe-inline' https://*;
+      img-src 'self' data: https:;
+      frame-src 'self' https://*;
+      object-src 'none';
+      base-uri 'self';
+ "> 
       <!-- Description and Keywords -->
       <meta name="description" content="Learn about the Arabic Church in Ireland, its services, events, and community activities. Discover religious services in Dublin. تعرف على الكنيسة العربية في أيرلندا وخدماتها وفعالياتها وأنشطاتها المجتمعية.">
       <meta name="keywords" content="Arabic Church, Church in Ireland, الكنيسة العربية, ايرلندا, Religious Services in Dublin, Community Activities">
@@ -257,17 +265,17 @@
                  </a>
              </div>
              <div class="w3-col m6">
-                 <form id="register-form" class="register-form">
-                     <div class="w3-row-padding">
-                         <input class="w3-input w3-border" type="name" name="name" id="name" placeholder="الاسم الكامل" required name="Name">
-                         <input class="w3-input w3-border" type="email" name="email" id="email" placeholder="البريد الاكتروني" required name="Email">
-                         <input class="w3-input w3-border" type="tel" name="tel" id="tel" placeholder="رقم الهاتف" required name="Phone">
-                         <input class="w3-input w3-border" type="text" name="text" id="text" placeholder="نص الرسالة" required name="Message">
-                         <input type="submit" id="submit" class="w3-button w3-black w3-section w3-right" value="ارسال">
-                         <div id="success-message"></div>
-                         <div id="errorMessage"></div>
-                     </div>
-                 </form>
+               <form id="register-form" class="register-form">
+                  <div class="w3-row-padding">
+                      <input class="w3-input w3-border" type="name" name="name" id="name" placeholder="الاسم الكامل" required>
+                      <input class="w3-input w3-border" type="email" name="email" id="email" placeholder="البريد الاكتروني" required>
+                      <input class="w3-input w3-border" type="tel" name="tel" id="tel" placeholder="رقم الهاتف" required>
+                      <input class="w3-input w3-border" type="text" name="text" id="text" placeholder="نص الرسالة" required>
+                      <input type="submit" id="submit" class="w3-button w3-black w3-section w3-right" value="ارسال">
+                      <div id="success-message"></div>
+                      <div id="error-message"></div>
+                  </div>
+              </form>              
              </div>
          </div>
      </div>
@@ -325,5 +333,16 @@
            }
          }
       </script>
+      <script>
+         document.getElementById("register-form").onsubmit = function(event) {
+             var email = document.getElementById("email").value;
+             var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email pattern
+             if (!regex.test(email)) {
+                 alert("Please enter a valid email address.");
+                 event.preventDefault(); // Prevent form submission
+             }
+         };
+         </script>
+         
    </body>
 </html>
