@@ -64,5 +64,7 @@ This project is hosted by GitHub custom Domain Page and github provide TSL free 
 This project is open source.
 
 Happy coding!
-- BY: [AA Digitalworks SEO and Website Irealnd](https://www.aadigitalworks.com/ie)
+
+BY: [AA Digitalworks SEO and Website Irealnd](https://www.aadigitalworks.com/ie)
+
 
